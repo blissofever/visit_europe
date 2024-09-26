@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여행 일정</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- 첫 번째 테이블 -->
+    <table id="scheduleTable1">
+        <caption>여행 일정</caption>
+        <thead>
+            <tr>
+                <th class="day">일차</th>
+                <th>여행 도시</th>
+                <th>주요 일정</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="day">1</span></td>
+                <td data-city="seoul,paris"><span class="city"></span></td>
+                <td data-activity="arrival"><span class="activity"></span></td>
+            </tr>
+            <tr>
+                <td><span class="day">2</span></td>
+                <td data-city="paris"><span class="city"></span></td>
+                <td data-activity="louvreTour"><span class="activity"></span></td>
+            </tr>
+            <tr>
+                <td><span class="day">3</span></td>
+                <td data-city="paris"><span class="city"></span></td>
+                <td data-activity="busTrog,freeTime"><span class="activity"></span></td> <!-- 복수 활동 -->
+            </tr>
+            <tr>
+                <td><span class="day">4</span></td>
+                <td data-city="paris,versailles"><span class="city"></span></td>
+                <td data-activity="versaillesTour,disneyTour"><span class="activity"></span></td> <!-- 복수 활동 -->
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function() {
+            // 도시와 주요 일정 내용을 변수로 정의
+            var cities = {
+                seoul: "서울",
+                paris: "파리",
+                versailles: "베르사유"
+            };
+
+            var activities = {
+                arrival: "파리 도착 + 픽업",
+                louvreTour: "루브르 투어 - 파리 야경투어",
+                busTrog: "버스트로놈 중식",
+                freeTime: "파리 자유시간 / 파리 출발",
+                versaillesTour: "베르사유 + 지베르니 + 고흐마을 투어",
+                disneyTour: "파리 디즈니랜드 투어"
+            };
+
+            // 도시 정보를 설정
+            $('td[data-city]').each(function() {
+                var cityKeys = $(this).data('city').split(','); // 도시 정보를 ','로 분리
+                var combinedCities = [];
+
+                // 각 키를 순회하여 해당하는 도시명을 결합
+                cityKeys.forEach(function(key) {
+                    if (cities[key]) {
+                        combinedCities.push(cities[key]);
+                    }
+                });
+
+                // 결합된 도시명을 셀에 표시
+                $(this).find('.city').text(combinedCities.join(' + '));
+            });
+
+            // 주요 일정 내용을 설정
+            $('td[data-activity]').each(function() {
+                var activityKeys = $(this).data('activity').split(','); // 여러 활동을 ','로 분리
+                var combinedActivities = [];
+
+                // 각 키를 순회하여 해당하는 활동 내용을 결합
+                activityKeys.forEach(function(key) {
+                    if (activities[key]) {
+                        combinedActivities.push(activities[key]);
+                    }
+                });
+
+                // 결합된 내용을 셀에 표시
+                $(this).find('.activity').text(combinedActivities.join(' + '));
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+

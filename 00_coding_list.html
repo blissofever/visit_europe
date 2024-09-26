@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* reset */
+        html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, section, summary {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+        }
+
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        img {
+            border: none;
+            vertical-align: top;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        button {
+            display: inline-block;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        input, button, a, select, option {
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        input[type="checkbox"] {
+            border: none !important;
+        }
+
+        /* for lte IE10 */
+        input[type="radio"] {
+            border: none !important;
+        }
+
+        /* for lte IE10 */
+        caption {
+            text-align: left;
+            margin-bottom: 7px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* common */
+        body, html, pre {
+            font-family: "맑은 고딕", "Malgun Gothic", "Dotum", sans-serif;
+            font-size: 14px;
+            color: #333;
+            letter-spacing: -0.045em !important;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .clearFix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .hidden {
+            margin: 0;
+            padding: 0;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .txt-center {
+            text-align: center;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #wrap {
+            padding-bottom: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px 0 10px;
+        }
+
+        table {
+            width: 98%;
+            margin: 20px auto 0;
+            border-top: 2px solid #787d81;
+        }
+
+        th {
+            background: #777f88;
+            color: #fff;
+        }
+
+        th, td {
+            height: 30px;
+            border-bottom: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+            text-align: center;
+        }
+
+        th:first-child, td:first-child {
+            border-left: 0;
+        }
+    </style>
+    <title>비즈잇 프로토타입</title>
+</head>
+<body>
+<div id="wrap">
+    <h1>비즈잇 Europe</h1>
+
+    <table>
+        <caption>업무화면</caption>
+        <colgroup>
+            <col style="width:5%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:15%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style=""/>
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">NO</th>
+                <th scope="col">1depth</th>
+                <th scope="col">2depth</th>
+                <th scope="col">3depth</th>
+                <th scope="col">파일명</th>
+                <th scope="col">업데이트일자</th>
+                <th scope="col">작업자</th>
+                <th scope="col">비고</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td title="no">1</td>
+                <td title="1depth">test</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/index.html" target="_blank">index.html</a></td>
+                <td title="업데이트일자">2024-08-19</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">2</td>
+                <td title="1depth">paris</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/01_paris.html" target="_blank">paris.html</a></td>
+                <td title="업데이트일자">2024-09-17</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">3</td>
+                <td title="1depth">Interlaken</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/02_interlaken.html" target="_blank">Interlaken.html</a></td>
+                <td title="업데이트일자">2024-09-19</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">4</td>
+                <td title="1depth">Praha</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/03_praha.html" target="_blank">Praha.html</a></td>
+                <td title="업데이트일자">2024-09-21</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">5</td>
+                <td title="1depth">Italy</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/04_italy.html" target="_blank">Italy.html</a></td>
+                <td title="업데이트일자">2024-09-21</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">6</td>
+                <td title="1depth">Spain</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/05_spain.html" target="_blank">Spain.html</a></td>
+                <td title="업데이트일자">2024-09-21</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">7</td>
+                <td title="1depth">Portugal</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/06_portugal.html" target="_blank">Portugal.html</a></td>
+                <td title="업데이트일자">2024-09-21</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">8</td>
+                <td title="1depth">Italy</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/07_italy_city.html" target="_blank">Italy_city.html</a></td>
+                <td title="업데이트일자">2024-09-21</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">9</td>
+                <td title="1depth">Spain</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/08_spain_city.html" target="_blank">Spain_city.html</a></td>
+                <td title="업데이트일자">2024-09-21</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">10</td>
+                <td title="1depth">Austria</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/09_austria.html" target="_blank">Austria_city.html</a></td>
+                <td title="업데이트일자">2024-09-21</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">11</td>
+                <td title="1depth">Dolomites</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/10_dolomites.html" target="_blank">Dolomites.html</a></td>
+                <td title="업데이트일자">2024-09-21</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">12</td>
+                <td title="1depth">Iceland</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/11_iceland.html" target="_blank">Iceland.html</a></td>
+                <td title="업데이트일자">2024-09-21</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">13</td>
+                <td title="1depth">Chamonix</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/12_chamonix.html" target="_blank">Chamonix.html</a></td>
+                <td title="업데이트일자">2024-09-21</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">14</td>
+                <td title="1depth">Majorca</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/13_majorca.html" target="_blank">Majorca.html</a></td>
+                <td title="업데이트일자">2024-09-21</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">15</td>
+                <td title="1depth">Malta</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/14_malta.html" target="_blank">Malta.html</a></td>
+                <td title="업데이트일자">2024-09-21</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+            <tr>
+                <td title="no">16</td>
+                <td title="1depth">Nice</td>
+                <td title="2depth">-</td>
+                <td title="3depth">-</td>
+                <td title="파일명"><a href="html/15_nice.html" target="_blank">Nice.html</a></td>
+                <td title="업데이트일자">2024-09-21</td>
+                <td title="작업자">이태석</td>
+                <td title="비고"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
