@@ -466,13 +466,12 @@
             }
           }
           .btn-box{
-            display: none;
+            display: flex;
             margin-top:16px;
           }
           &.active{
             border-bottom: 0;
             .btn-box{
-              display: flex;
               &.end{
                 justify-content: end;
               }

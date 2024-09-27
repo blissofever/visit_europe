@@ -439,14 +439,11 @@
   margin-bottom: 8px;
 }
 .main-list > li .cont ul li .btn-box {
-  display: none;
+  display: flex;
   margin-top: 16px;
 }
 .main-list > li .cont ul li.active {
   border-bottom: 0;
-}
-.main-list > li .cont ul li.active .btn-box {
-  display: flex;
 }
 .main-list > li .cont ul li.active .btn-box.end {
   justify-content: end;
