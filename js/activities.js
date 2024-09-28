@@ -73,6 +73,7 @@ $(document).ready(function() {
 	var activities = {
 		// IN 일정
 		arrivalPAR: "파리 IN",
+		arrivalNCE: "니스 IN",
 		arrivalICN: "인천 도착",
 		arrivalROM: "로마 IN",
 		arrivalVCE: "베니스 IN",
@@ -96,6 +97,10 @@ $(document).ready(function() {
 
 		// 이동 일정
 		movetoPAR: "파리 이동",
+		movetoNCE: "니스 이동",
+		movetoAVI: "아비뇽 이동",
+		movetoMRS: "마르세유 이동",
+		movetoGLB: "그레방 이동",
 		movetoCMN: "샤모니 이동",
 		movetoANN: "안시 이동",
 		movetoGVA: "제네바 이동",
@@ -148,6 +153,7 @@ $(document).ready(function() {
 
 		// OUT 일정
 		departurePAR: "파리 OUT",
+		departureNCE: "니스 OUT",
 		departureICN: "인천 OUT",
 		departureROM: "로마 OUT",
 		departureVCE: "베니스 OUT",
@@ -172,6 +178,7 @@ $(document).ready(function() {
 
 		// 프랑스 일정
 		freetimePAR: "파리 자유시간",
+		freetimeNCE: "니스 자유시간",
 		freetimeANN: "안시 자유시간",
 		freetimeCMN: "샤모니 자유시간 + 멀티패스",
 		bustronomeLunch: "버스트로놈 중식",
@@ -180,6 +187,8 @@ $(document).ready(function() {
 		parisNightTour: "파리 야경투어",
 		versaillesGivernyVanGoghTour: "베르사유+지베르니+고흐마을 투어",
 		QCthermespa : "QC떼르메 온천 스파",
+		ezemonaco : " (에즈, 모나코)",
+		grasssanitpaul : " (그라스, 생폴드방스)",
 		
 		
 		
