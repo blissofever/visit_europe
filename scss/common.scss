@@ -271,17 +271,35 @@
       >.cont{
         div{
           &:nth-child(1){
-            background-image: url(../images/img-main-test01.png);
+            background-image: url(../images/01main-paris.png);
           }
           &:nth-child(2){
-            background-image: url(../images/img-main-test02.png);
+            background-image: url(../images/02main-interlaken.png);
           }
           &:nth-child(3){
-            background-image: url(../images/img-main-test03.png);
+            background-image: url(../images/03main-prague.png);
           }
         }
       }
     }
+
+    &.rome{
+      >.cont{
+        div{
+          &:nth-child(1){
+            background-image: url(../images/04main-rome.png);
+          }
+          &:nth-child(2){
+            background-image: url(../images/05main-barcelona.png);
+          }
+          &:nth-child(3){
+            background-image: url(../images/06main-lisboa.png);
+          }
+        }
+      }
+    }
+
+    
   }
 }
 .wrap{

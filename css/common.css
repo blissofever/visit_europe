@@ -261,13 +261,22 @@
   scale: 1.05;
 }
 .banner-slide .slideList.paris > .cont div:nth-child(1) {
-  background-image: url(../images/img-main-test01.png);
+  background-image: url(../images/01main-paris.png);
 }
 .banner-slide .slideList.paris > .cont div:nth-child(2) {
-  background-image: url(../images/img-main-test02.png);
+  background-image: url(../images/02main-interlaken.png);
 }
 .banner-slide .slideList.paris > .cont div:nth-child(3) {
-  background-image: url(../images/img-main-test03.png);
+  background-image: url(../images/03main-prague.png);
+}
+.banner-slide .slideList.rome > .cont div:nth-child(1) {
+  background-image: url(../images/04main-rome.png);
+}
+.banner-slide .slideList.rome > .cont div:nth-child(2) {
+  background-image: url(../images/05main-barcelona.png);
+}
+.banner-slide .slideList.rome > .cont div:nth-child(3) {
+  background-image: url(../images/06main-lisboa.png);
 }
 
 .wrap {
