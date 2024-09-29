@@ -5,7 +5,7 @@
 
 
 
-
+.mCSB_inside>.mCSB_container{margin-right: 0;}
 
 // main
 .main-index{
@@ -440,7 +440,7 @@
             padding: 24px 0;
             align-items: center;
             .map-area{
-              width: 440px;
+              min-width: 440px;
               text-align: center;
             }
             .table-area{
@@ -553,6 +553,7 @@
 section.section-bg-main{
   position: relative;
   height: 100vh;
+  min-height: 800px;
   .wrap{
     padding-top: 100px;
     display: flex;
@@ -599,13 +600,14 @@ section.section-bg-main{
   }
   .main-title{
     position: relative;
+    text-shadow: 0px 4px 4px rgba(0 0 0 / .3);
     &.center{
       text-align: center;
     }
     p{
       font-size: 32px;
       font-weight: 600;
-      color: #767676;
+      color: #fff;
     }
     h1{
       font-size: 100px;
@@ -615,7 +617,7 @@ section.section-bg-main{
     h2{
       font-size: 68px;
       font-family: 'BSB','sans-serif';
-      color: #999;
+      color: #fff;
     }
     &.bg-img::before{
       content: '';

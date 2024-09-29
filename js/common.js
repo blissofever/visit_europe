@@ -5,7 +5,10 @@ function isMobileTablet() {
 
 
 $(function(){
-
+	$(".scroll-list").mCustomScrollbar({
+        scrollInertia: 300
+    });
+	
 	$('.banner-slide .slide').slick({
 		centerMode: true,
 		centerPadding: '140px',

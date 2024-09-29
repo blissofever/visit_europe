@@ -1,4 +1,8 @@
 /* Colors */
+.mCSB_inside > .mCSB_container {
+  margin-right: 0;
+}
+
 .main-index {
   height: 100vh;
   padding: 20px 0;
@@ -409,7 +413,7 @@
   align-items: center;
 }
 .main-list > li .cont ul li .cont-depth .map-area {
-  width: 440px;
+  min-width: 440px;
   text-align: center;
 }
 .main-list > li .cont ul li .cont-depth .table-area {
@@ -495,6 +499,7 @@
 section.section-bg-main {
   position: relative;
   height: 100vh;
+  min-height: 800px;
 }
 section.section-bg-main .wrap {
   padding-top: 100px;
@@ -535,6 +540,7 @@ section.section-bg-main .slogan-box .shape-type01::after {
 }
 section.section-bg-main .main-title {
   position: relative;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 }
 section.section-bg-main .main-title.center {
   text-align: center;
@@ -542,7 +548,7 @@ section.section-bg-main .main-title.center {
 section.section-bg-main .main-title p {
   font-size: 32px;
   font-weight: 600;
-  color: #767676;
+  color: #fff;
 }
 section.section-bg-main .main-title h1 {
   font-size: 100px;
@@ -552,7 +558,7 @@ section.section-bg-main .main-title h1 {
 section.section-bg-main .main-title h2 {
   font-size: 68px;
   font-family: "BSB", "sans-serif";
-  color: #999;
+  color: #fff;
 }
 section.section-bg-main .main-title.bg-img::before {
   content: "";
