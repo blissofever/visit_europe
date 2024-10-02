@@ -502,11 +502,18 @@ section.section-bg-main {
   min-height: 800px;
 }
 section.section-bg-main .wrap {
-  padding-top: 100px;
+  width: fit-content;
+  min-width: 350px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 140px;
+  gap: 80px;
+  border: 1px solid #fff;
+  border-top: 0;
+  border-radius: 0 0 25px 25px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.75) 100%);
+  backdrop-filter: blur(3px);
 }
 section.section-bg-main .img-box img {
   width: 100%;
@@ -517,76 +524,58 @@ section.section-bg-main .img-box img {
 }
 section.section-bg-main .slogan-box span {
   position: relative;
-  font-size: 20px;
-  font-weight: 700;
-  color: #555;
+  font-size: 28px;
+  color: #000;
+  font-family: "BSB", sans-serif;
 }
 section.section-bg-main .slogan-box p {
   margin-top: 20px;
-  font-family: "BSB", sans-serif;
-  font-size: 32px;
-  color: #333;
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
 }
-section.section-bg-main .slogan-box .shape-type01::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  z-index: -1;
-  background: url(../images/svg-city_slogan.svg) no-repeat center/100%;
-  width: 110%;
-  height: 100%;
+section.section-bg-main .slogan-box .flex-box {
+  gap: 24px;
 }
 section.section-bg-main .main-title {
   position: relative;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 section.section-bg-main .main-title.center {
   text-align: center;
 }
 section.section-bg-main .main-title p {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
-  color: #fff;
+  color: #444;
 }
 section.section-bg-main .main-title h1 {
-  font-size: 100px;
+  font-size: 60px;
   font-weight: 600;
   color: #000;
+  position: relative;
 }
-section.section-bg-main .main-title h2 {
-  font-size: 68px;
-  font-family: "BSB", "sans-serif";
-  color: #fff;
-}
-section.section-bg-main .main-title.bg-img::before {
+section.section-bg-main .main-title h1.shape-type01::after {
   content: "";
   display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%);
+  left: 0;
+  bottom: 10px;
   z-index: -1;
+  background: #333;
+  clip-path: polygon(18% 82%, 100% 79%, 84% 100%, 0% 100%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
 }
-section.section-bg-main.paris .slogan-box .flex-box {
-  gap: 24px;
-}
-section.section-bg-main.paris .bg-img::before {
-  width: 334px;
-  height: 348px;
-  background: url(../images/svg-paris-crown.svg) no-repeat center/cover;
-  mix-blend-mode: color-dodge;
-  opacity: 1;
-}
-section.section-bg-main.swiss .main-title p {
-  color: #fff;
-}
-section.section-bg-main.swiss .main-title h1 {
-  color: #fff;
-}
-section.section-bg-main.swiss .main-title h2 {
-  color: #fff;
+section.section-bg-main .main-title h2 {
+  font-size: 40px;
+  font-family: "BSB", "sans-serif";
+  color: #444;
 }
 
 @keyframes var {
