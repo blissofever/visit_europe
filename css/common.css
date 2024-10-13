@@ -159,10 +159,11 @@
   z-index: 1;
   width: 80px;
   height: 80px;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.7);
   background-position: center;
   background-repeat: no-repeat;
   border: 0;
+  border-radius: 15px;
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
@@ -281,6 +282,33 @@
 }
 .banner-slide .slideList.rome > .cont div:nth-child(3) {
   background-image: url(../images/06main-lisboa.png);
+}
+.banner-slide .slideList.small-city > .cont div:nth-child(1) {
+  background-image: url(../images/07main-italy_city.png);
+}
+.banner-slide .slideList.small-city > .cont div:nth-child(2) {
+  background-image: url(../images/08main-andalucia.png);
+}
+.banner-slide .slideList.small-city > .cont div:nth-child(3) {
+  background-image: url(../images/09main-salzkammergut.png);
+}
+.banner-slide .slideList.dolomites > .cont div:nth-child(1) {
+  background-image: url(../images/10main-dolomites.png);
+}
+.banner-slide .slideList.dolomites > .cont div:nth-child(2) {
+  background-image: url(../images/11main-iceland.png);
+}
+.banner-slide .slideList.dolomites > .cont div:nth-child(3) {
+  background-image: url(../images/12main-chamonix.png);
+}
+.banner-slide .slideList.mallorca > .cont div:nth-child(1) {
+  background-image: url(../images/13main-majorca.png);
+}
+.banner-slide .slideList.mallorca > .cont div:nth-child(2) {
+  background-image: url(../images/14main-malta.png);
+}
+.banner-slide .slideList.mallorca > .cont div:nth-child(3) {
+  background-image: url(../images/15main-nice.png);
 }
 
 .wrap {

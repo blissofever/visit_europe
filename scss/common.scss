@@ -155,10 +155,11 @@
     z-index: 1;
     width: 80px;
     height: 80px;
-    background-color: transparent;
+    background-color: rgba(255 255 255 / .7);
     background-position: center;
     background-repeat: no-repeat;
     border: 0;
+    border-radius: 15px;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
@@ -299,7 +300,51 @@
       }
     }
 
-    
+    &.small-city{
+      >.cont{
+        div{
+          &:nth-child(1){
+            background-image: url(../images/07main-italy_city.png);
+          }
+          &:nth-child(2){
+            background-image: url(../images/08main-andalucia.png);
+          }
+          &:nth-child(3){
+            background-image: url(../images/09main-salzkammergut.png);
+          }
+        }
+      }
+    }
+    &.dolomites{
+      >.cont{
+        div{
+          &:nth-child(1){
+            background-image: url(../images/10main-dolomites.png);
+          }
+          &:nth-child(2){
+            background-image: url(../images/11main-iceland.png);
+          }
+          &:nth-child(3){
+            background-image: url(../images/12main-chamonix.png);
+          }
+        }
+      }
+    }
+    &.mallorca{
+      >.cont{
+        div{
+          &:nth-child(1){
+            background-image: url(../images/13main-majorca.png);
+          }
+          &:nth-child(2){
+            background-image: url(../images/14main-malta.png);
+          }
+          &:nth-child(3){
+            background-image: url(../images/15main-nice.png);
+          }
+        }
+      }
+    }
   }
 }
 .wrap{
