@@ -181,7 +181,7 @@ $(document).ready(function() {
 		freetimeNCE: "니스 자유시간",
 		freetimeANN: "안시 자유시간",
 		freetimeCMN: "샤모니 자유시간 + 멀티패스",
-		bustronomeLunch: "버스트로놈 중식",
+		bustronomeLunch: "파리 선택일정 (버스트로놈 중식/스냅촬영)",
 		montStMichelTour: "몽생미셸 투어",
 		louvreTour: "루브르 투어",
 		parisNightTour: "파리 야경투어",
@@ -204,14 +204,14 @@ $(document).ready(function() {
 		//체코 일정
 		freetimePRG: "프라하 자유시간",
 		freetimeCESKY: "체스키 자유시간",
-		pragueTour: "프라하 투어 + 중식, 야경유람선",
+		pragueTour: "프라하 허니문투어 + 중식, 유람선",
 		ceskyTour: "체스키 차량투어 + 중식",
-		pragueTour: "프라하 투어 + 중식, 야경유람선",
-		pragueChoice: "드레스덴 스냅투어/비어스파/모차르트 콘서트디너 선택일정",
+		pragueChoice: "프라하 선택일정 (드레스덴 투어/스냅촬영/비어스파)",
 
 		//헝가리 일정
 		freetimeBUD: "부다페스트 자유시간",
 		szechenyibath: "세체니 온천",
+		budapestNightphoto: "야경투어&스냅",
 
 		//독일 일정
 		freetimeMUC: "뮌헨 자유시간",
@@ -232,15 +232,15 @@ $(document).ready(function() {
 		stayPositano: "포지타노 숙박",
 		vaticanTour: "바티칸 투어",
 		romeNightTour: "로마 야경투어",
-		veniceGondolaLunchTour : "베니스 투어 + 곤돌라, 중식",
+		veniceGondolaLunchTour : "베니스 허니문투어 + 곤돌라, 중식",
 		QCthemespa : "QC떼르메 온천 스파",
 		matera : " (마테라)",
 		poliandalbe : " (폴리냐노아마레, 알베로벨로)",
 
 		// 영국 일정
 		freetimeLON: "런던 자유시간",
-		nearByTour: "근교투어/해리포터스튜디오/뮤지컬관람 중 선택일정",
-		londonchoice: "근교투어/해리포터스튜디오/뮤지컬관람 중 선택일정",
+		nearByTour: "런던 선택일정 (근교투어/해리포터스튜디오/뮤지컬관람)",
+		londonchoice: "런던 선택일정 (근교투어/해리포터스튜디오/뮤지컬관람)",
 
 		//스페인 일정
 		freetimeBCN: "바르셀로나 자유시간",
@@ -253,6 +253,7 @@ $(document).ready(function() {
 		gaudiAndFlamenco: "가우디투어 + 플라멩고쇼",
 		toledosegoviaTour: "톨레도 + 세고비아 투어",
 		alhanbraTour: "알함브라 투어",
+		sevilleTour: "세비야 투어",
 		stayKempinski: "캠핀스키 리조트 휴식",
 		stayParador: "파라도르 고성호텔 휴식",
 
@@ -278,7 +279,7 @@ $(document).ready(function() {
 
 		// 아이슬란드 일정
 		freetimeKEF: "레이캬비크 자유시간",
-		reykavikchoice: "오로라/돌고래왓칭/스카이라군 선택일정",
+		reykavikchoice: "레이캬비크 선택일정 (오로라/돌고래왓칭/스카이라군)",
 		goldencircleTour: "골든서클투어",
 		jokulsalonTour: "남부해안 + 요쿨살론 빙하투어",
 		bluelagoonKEF: "블루라군 온천 스파",
