@@ -181,7 +181,7 @@ $(document).ready(function() {
 		freetimeNCE: "니스 자유시간",
 		freetimeANN: "안시 자유시간",
 		freetimeCMN: "샤모니 자유시간 + 멀티패스",
-		bustronomeLunch: "파리 선택일정 (버스트로놈 중식/스냅촬영)",
+		bustronomeLunch: "파리 선택일정 (버스트로놈 중식/스냅촬영)", // 파리 초이스로 코드 변경 예정 (2024-10-17)
 		montStMichelTour: "몽생미셸 투어",
 		louvreTour: "루브르 투어",
 		parisNightTour: "파리 야경투어",
@@ -325,6 +325,10 @@ $(document).ready(function() {
 
 		// 결합된 내용을 셀에 표시
 		$(this).find('span').text(combinedActivities.join(''));
+	});
+
+	$('.btn.top').click(function() {
+		$('#mCSB_1_container, #mCSB_1_dragger_vertical').css('top', 'calc(-100% + 16px)');
 	});
 });
 
