@@ -353,6 +353,7 @@
 }
 .schedule.wrap{
   padding-bottom: 80px;
+  position: relative;
   .comment{
     // padding-top: 120px;
     display: none; // 임시삭제 flex
@@ -751,8 +752,74 @@ section.section-bg-main{
   //   }
   // }
 }
-
-
+.btn-box{
+  position: fixed;
+  bottom: 40px;
+  right: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  .btn{
+    // width: 40px;
+    // height: 40px;
+      width: 56px;
+      padding: 12px 0;
+      background-color: #000;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-sghadow: 2px 6px 16px rgba(0 0 0 / .15);
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        font-weight: 600;
+        font-size: 12px;
+      &::before{
+        content: '';
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%,-50%);
+        // background-color: #000;
+        width:16px;
+        height: 16px;
+        white-space: nowrap;
+        
+      }
+    }
+    &.top{
+      span{
+        &::before{
+          display: block;
+          background: url(../images/ico-arrow-up.svg)no-repeat center;
+        }
+      }
+    }
+    &.home{
+      span{
+        &::before{
+          display: block;
+          background: url(../images/ico-home.svg)no-repeat center;
+        }
+      }
+    }
+    &.info{
+      span{
+        &::before{
+          display: block;
+          background: url(../images/ico-info.svg)no-repeat center;
+        }
+      }
+    }
+  }
+}
 
 
 @keyframes var {
