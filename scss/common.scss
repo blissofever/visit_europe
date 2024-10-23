@@ -752,7 +752,7 @@ section.section-bg-main{
   //   }
   // }
 }
-.btn-box{
+.btn-box:not(.table-area .btn-box){
   position: fixed;
   bottom: 40px;
   right: 80px;
@@ -772,7 +772,7 @@ section.section-bg-main{
       align-items: center;
       justify-content: center;
       text-align: center;
-      box-sghadow: 2px 6px 16px rgba(0 0 0 / .15);
+      box-shadow: 2px 6px 16px rgba(0 0 0 / .15);
     span{
         display: flex;
         align-items: center;
@@ -791,7 +791,6 @@ section.section-bg-main{
         width:16px;
         height: 16px;
         white-space: nowrap;
-        
       }
     }
     &.top{

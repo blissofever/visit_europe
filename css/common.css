@@ -609,7 +609,7 @@ section.section-bg-main .main-title h2 {
   color: #444;
 }
 
-.btn-box {
+.btn-box:not(.table-area .btn-box) {
   position: fixed;
   bottom: 40px;
   right: 80px;
@@ -619,7 +619,7 @@ section.section-bg-main .main-title h2 {
   flex-direction: column;
   gap: 6px;
 }
-.btn-box .btn {
+.btn-box:not(.table-area .btn-box) .btn {
   width: 56px;
   padding: 12px 0;
   background-color: #000;
@@ -628,9 +628,9 @@ section.section-bg-main .main-title h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  box-sghadow: 2px 6px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.15);
 }
-.btn-box .btn span {
+.btn-box:not(.table-area .btn-box) .btn span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -639,21 +639,21 @@ section.section-bg-main .main-title h2 {
   font-weight: 600;
   font-size: 12px;
 }
-.btn-box .btn span::before {
+.btn-box:not(.table-area .btn-box) .btn span::before {
   content: "";
   width: 16px;
   height: 16px;
   white-space: nowrap;
 }
-.btn-box .btn.top span::before {
+.btn-box:not(.table-area .btn-box) .btn.top span::before {
   display: block;
   background: url(../images/ico-arrow-up.svg) no-repeat center;
 }
-.btn-box .btn.home span::before {
+.btn-box:not(.table-area .btn-box) .btn.home span::before {
   display: block;
   background: url(../images/ico-home.svg) no-repeat center;
 }
-.btn-box .btn.info span::before {
+.btn-box:not(.table-area .btn-box) .btn.info span::before {
   display: block;
   background: url(../images/ico-info.svg) no-repeat center;
 }
