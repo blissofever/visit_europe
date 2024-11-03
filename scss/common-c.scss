@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+textarea {
+    width: 100%;
+    height: 300px;
+    // padding: 12px;
+    font-size: 16px;
+    font-family: 'ChakraPetch';
+    padding: 16px;
+    &:focus {
+        outline: #606060;
+    }
+}
+h1{
+    margin-bottom: 32px;
+}
+button {
+    &.transform{
+        background-color: green;
+        border: 0;
+        font-weight: 600;
+        color: #fff;
+        font-size: 16px;
+        padding: 12px;
+        margin-bottom: 32px;
+    }
+}
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-weight: 500;
+    line-height: 19px;
+    min-height: 50px;
+}
+.t-head{
+    h2{
+        margin-bottom: 24px;
+    }
+}
+.flex-box{
+    display: flex;
+    gap: 80px;
+    .date-box, .flight-model{
+        display: flex;
+        gap: 24px;
+        align-items: center;
+
+        .title{
+            min-width: 80px;
+            text-align: right;
+            color: #3d3d3d;
+            font-weight: 600;
+
+            & + p{
+                font-size: 16px;
+                color: #606060;
+            }
+        }
+    }
+}
+
+#output{
+    margin-top: 16px;
+}

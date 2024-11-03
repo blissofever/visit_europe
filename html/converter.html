@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>항공편 정보 변환기</title>
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/common-c.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/common-c.js"></script>
+</head>
+
+<body>
+
+<h1>항공편 정보 변환기</h1>
+<textarea id="input" placeholder="항공편 정보를 입력하세요."></textarea>
+<button id="convertBtn" class="transform">변환하기</button>
+
+<div class="t-head">
+    <h2>변환된 항공편 정보:</h2>
+    <div class="flex-box">
+        <div class="date-box">
+            <p class="title">비행기 출발일</p>
+            <p id="firstFlightTime">이곳에 비행기의 출발날짜가 표시됩니다.</p>
+        </div>
+        <div class="flight-model">
+            <p class="title">항공사</p>
+            <p id="firstFlightAirline">이곳에 항공사 이름이 표시됩니다.</p>
+        </div>
+    </div>
+</div>
+<pre id="output"></pre>
+
+</body>
+</html>
