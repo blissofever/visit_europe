@@ -29,7 +29,7 @@ button {
 }
 pre {
     // background: #f4f4f4;
-    // font-size: 9px;
+    font-size: 12px;
     font-family: Arial !important;
     padding: 10px;
     border: 1px solid #ddd;
@@ -57,7 +57,7 @@ pre {
             font-weight: 600;
 
             & + p{
-                // font-size: 9px;
+                font-size: 12px;
                 color: #000;
             }
         }
@@ -67,6 +67,13 @@ pre {
         .title{
             & + p{
                 font-weight: bold;
+            }
+        }
+    }
+    .flight-model{
+        .title{
+            & + p{
+                color: #63529C;
             }
         }
     }
