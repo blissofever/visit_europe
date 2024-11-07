@@ -29,7 +29,6 @@ button.transform {
 }
 
 pre {
-  font-size: 9px;
   font-family: Arial !important;
   padding: 10px;
   border: 1px solid #ddd;
@@ -58,7 +57,6 @@ pre {
   font-weight: 600;
 }
 .flex-box .date-box .title + p, .flex-box .flight-model .title + p {
-  font-size: 9px;
   color: #000;
 }
 .flex-box .date-box .title + p {
