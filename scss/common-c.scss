@@ -28,7 +28,9 @@ button {
     }
 }
 pre {
-    background: #f4f4f4;
+    // background: #f4f4f4;
+    font-size: 9px;
+    font-family: Arial !important;
     padding: 10px;
     border: 1px solid #ddd;
     font-weight: 500;
@@ -55,8 +57,16 @@ pre {
             font-weight: 600;
 
             & + p{
-                font-size: 16px;
-                color: #606060;
+                font-size: 9px;
+                color: #000;
+            }
+        }
+        
+    }
+    .date-box{
+        .title{
+            & + p{
+                font-weight: bold;
             }
         }
     }
