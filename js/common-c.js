@@ -249,21 +249,22 @@ function convertFlightInfo() {
         // 배열을 전처리하여 6번째 요소를 삭제하거나 수정
         parts = preprocessArray(parts);
 
+		console.log(parts);
         // 전처리된 parts 배열을 이용하여 데이터 구성
-        const dateData = parts[4].slice(0, 2);
-        const monthData = parts[4].slice(2, 5);
+        const dateData = parts[3].slice(0, 2);
+        const monthData = parts[3].slice(2, 5);
         const depMonthOut = depMonth[monthData] || monthData;
         
-        const depTime = parts[7].replace(/\b(\d{2})(\d{2})\b/, '$1:$2');
-        const arrTime = parts[8].replace(/\b(\d{2})(\d{2})\b/, '$1:$2');
+        const depTime = parts[6].replace(/\b(\d{2})(\d{2})\b/, '$1:$2');
+        const arrTime = parts[7].replace(/\b(\d{2})(\d{2})\b/, '$1:$2');
         
-        const depAirportCode = parts[5].slice(0, 3);
-        const arrAirportCode = parts[5].slice(3);
+        const depAirportCode = parts[4].slice(0, 3);
+        const arrAirportCode = parts[4].slice(3);
         const depAirport = airports[depAirportCode] || depAirportCode;
         const arrAirport = airports[arrAirportCode] || arrAirportCode;
         
-        const flightCode = parts[1] + parts[2];
-        const flightModelKor = flightModels[parts[1]];
+        const flightCode = parts[0] + parts[1];
+        const flightModelKor = flightModels[parts[0]];
 
         if (index === 0) {
             firstFlightTime = `${depMonthOut} ${dateData}일`;
@@ -272,7 +273,6 @@ function convertFlightInfo() {
 
         output += `[${depTime}] ${flightCode} ${depAirport} 공항 출발\n`;
         output += `[${arrTime}] ${arrAirport} 공항 도착\n\n`;
-		console.log(parts);
     });
 
     // 결과 출력
@@ -283,20 +283,73 @@ function convertFlightInfo() {
 }
 
 // 전처리 함수
+// function preprocessArray(data) {
+//     // 6번째 배열 요소가 숫자만 포함된 경우 삭제
+//     if (/^\d+$/.test(data[5])) {
+//         data.splice(5, 1); // 6번째 요소 삭제
+//         // console.log("After number deletion:", data.length, data);
+//     } 
+//     // 6번째 배열 요소에 '*'가 포함된 경우 '*' 및 앞 문자 제거
+//     else if (data[5].includes('*')) {
+//         data[5] = data[5].replace(/.\*/, ''); // *와 그 앞 문자 제거
+//         //console.log("After '*' removal:", data.length, data);
+//     }
+
+//     // 항공사 코드와 편명이 공백 없이 결합된 경우 분리 (예: "VY2110"을 "VY", "2110"으로)
+//     if (/^[A-Z]{2}\d{2,4}$/.test(data[1])) {
+//         let match = data[1].match(/^([A-Z]{2})(\d{2,4})$/);
+//         if (match) {
+//             data[1] = match[1]; // 항공사 코드
+//             data.splice(2, 0, match[2]); // 편명을 data[2]로 삽입
+//         }
+//         // console.log("After flight number split:", data.length, data);
+//     }
+//     return data;
+// }
+
 function preprocessArray(data) {
-    // 6번째 배열 요소가 숫자만 포함된 경우 삭제
-    if (/^\d+$/.test(data[5])) {
-        data.splice(5, 1); // 6번째 요소 삭제
-        console.log("After number deletion:", data.length, data);
-    } 
-    // 6번째 배열 요소에 '*'가 포함된 경우 '*' 및 앞 문자 제거
-    else if (data[5].includes('*')) {
-        data[5] = data[5].replace(/.\*/, ''); // *와 그 앞 문자 제거
-        console.log("After '*' removal:", data.length, data);
+    // 배열의 각 요소를 처리하기 위한 반복문
+    for (let i = 0; i < data.length; i++) {
+        // 항공사 코드와 편명이 결합된 경우 (예: "EY823"을 "EY", "823"으로 분리)
+        if (/^[A-Z]{2}\d{2,4}$/.test(data[i])) {
+            let match = data[i].match(/^([A-Z]{2})(\d{2,4})$/);
+            if (match) {
+                data[i] = match[1]; // 항공사 코드
+                data.splice(i + 1, 0, match[2]); // 편명을 다음 인덱스에 삽입
+                console.log("After flight number split:", data.length, data);
+                // 배열 구조가 변경되었으므로 인덱스를 조정하여 반복
+                i++;
+            }
+        }
+        
+        // 공항 코드에 '*'가 포함된 경우 ('1*ICNAUH' -> 'ICNAUH')
+        if (data[i].includes('*')) {
+            data[i] = data[i].replace(/^[^A-Z]*\*/, ''); // '*' 및 그 앞 문자 제거
+            console.log("After '*' removal:", data.length, data);
+        }
+
+        // 불필요한 숫자 요소 삭제 (시간, 항공기 편명이 아닌 숫자 요소만 삭제)
+        if (/^\d+$/.test(data[i]) && !isTimeFormat(data[i]) && !isFlightNumber(data[i])) {
+            data.splice(i, 1); // 해당 요소 삭제
+            console.log("After number deletion:", data.length, data);
+            // 배열 구조가 변경되었으므로 인덱스를 조정하여 반복
+            i--;
+        }
     }
-    
+
     return data;
 }
+
+// 시간 형식 확인 함수 (HHMM 형식으로 되어 있는지 확인)
+function isTimeFormat(value) {
+    return /^\d{4}$/.test(value) && parseInt(value.substring(0, 2)) < 24 && parseInt(value.substring(2, 4)) < 60;
+}
+
+// 항공기 편명 확인 함수 (항공사 코드 다음에 오는 숫자인지 확인)
+function isFlightNumber(value) {
+    return /^\d{2,4}$/.test(value);
+}
+
 
 // 버튼 클릭 이벤트에 함수 연결
 $('#convertBtn').click(convertFlightInfo);
