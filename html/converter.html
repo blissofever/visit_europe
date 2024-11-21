@@ -11,18 +11,26 @@
 </head>
 
 <body>
-
-<h1>항공편 정보 변환기</h1>
+<div class="flex-box main">
+    <img src="../images/main-logo-visit_europe.svg" class="main-logo" alt="비즈잇유럽">
+    <h1>항공편 정보 변환기<span style="font-size: 12px;color: #999;">1.05ver</span></h1>
+</div>
+<p>* 스케쥴을 구간 당 한줄로 정리하여 삽입해주세요.</p>
+<p>단, 주요 구간이 아닌 경우 일부 조회가 불가능할 수 있습니다.</p>
+<p style="color: #999;margin-top: 12px;">예시)<br>
+    1  EY 826 E 12MAY 1*AUHICN DK2  0915 2240  12MAY  E  0 789 M<br>
+    2  EY099 M 29APR 2 AUHLIS DK2  0235 0740  30APR  E  0 781 M
+</p>
 <textarea id="input" placeholder="항공편 정보를 입력하세요."></textarea>
 <button id="convertBtn" class="transform">변환하기</button>
 
 <div class="t-head">
     <h2>변환된 항공편 정보:</h2>
     <div class="flex-box">
-        <div class="date-box">
+        <!-- <div class="date-box">
             <p class="title">비행기 출발일</p>
             <p id="firstFlightTime">이곳에 비행기의 출발날짜가 표시됩니다.</p>
-        </div>
+        </div> -->
         <div class="flight-model">
             <p class="title">항공사</p>
             <p id="firstFlightAirline">이곳에 항공사 이름이 표시됩니다.</p>
