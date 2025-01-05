@@ -52,7 +52,7 @@ $(function(){
 
 	$('.schedule>.btn-box .btn.info').on('click', function(e){
 		e.preventDefault();
-		window.open('https://puddle-bovid-427.notion.site/10f89220101b80949cecc78e1f6f5f65', '_blank');
+		window.open('https://visit-europe.notion.site/10f89220101b80949cecc78e1f6f5f65?pvs=4', '_blank');
         });
 
 });
