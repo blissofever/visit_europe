@@ -66,6 +66,8 @@ $(document).ready(function() {
 		AVI : "아비뇽",
 		MRS : "마르세유",
 		GLB : "그레방",
+		PRM : "포르티망",
+		
 	}
 
 
@@ -127,6 +129,7 @@ $(document).ready(function() {
 		movetoNERJA: "네르하 이동",
 		movetoPMI: "마요르카 이동",
 		movetoPDL: "폰타델가다 이동",
+		movetoPRM: "포르티망 이동",
 		movetoLIS: "리스본 이동",
 		movetoOPO: "포르투 이동",
 		movetoPRG: "프라하 이동",
@@ -261,10 +264,11 @@ $(document).ready(function() {
 		freetimeLIS: "리스본 자유시간",
 		freetimeOPO: "포르투 자유시간",
 		freetimePDL: "폰타델가다 자유시간",
+		freetimePRM: "포르티망 자유시간",
 		portwineryTour: "포트와인 와이너리 투어",
 		sintraandrocaTour: "신트라+호카곶+카스카이스 투어",
 		hotspringPDL: "활화산 천연 온천 스파",
-		
+		prmChoice: "포르티망 선택일정 (베나길카약 투어/ 렌터카 자유시간)",
 
 		// 스위스 일정
 		freetimeZER: "체르마트 당일치기 자유시간",
