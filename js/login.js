@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
+  
   var logoutBtn = document.getElementById('kakao-logout-btn');
   if (logoutBtn) {
     logoutBtn.addEventListener('click', function() {
