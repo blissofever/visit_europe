@@ -81,6 +81,17 @@ function kakaoLogin() {
   });
 }
 
+function kakaoLogout() {
+  Kakao.Auth.logout(function(response) {
+    console.log("로그아웃 완료:", response);
+    // localStorage에 저장된 로그인 관련 정보 삭제
+    localStorage.removeItem('kakaoAuthToken');
+    localStorage.removeItem('kakaoUser');
+    // 로그아웃 후 로그인 페이지로 이동 (또는 원하는 페이지로 이동)
+    window.location.href = "login.html";
+  });
+}
+
 // DOMContentLoaded 이벤트: HTML 요소들이 모두 로드된 후 로그인 버튼 이벤트 등록
 document.addEventListener("DOMContentLoaded", function() {
   var loginBtn = document.getElementById('kakao-login-btn');
@@ -89,22 +100,18 @@ document.addEventListener("DOMContentLoaded", function() {
       kakaoLogin();
     });
   }
+
+  var logoutBtn = document.getElementById('kakao-logout-btn');
+  if (logoutBtn) {
+    logoutBtn.addEventListener('click', function() {
+      kakaoLogout();
+    });
+  }
 });
 
 
 
-    var logoutBtn = document.getElementById('logoutBtn');
-      if (logoutBtn) {
-        logoutBtn.addEventListener('click', function() {
-          Kakao.Auth.logout(function(response) {
-            console.log("카카오 로그아웃 완료:", response);
-            // 클라이언트에 저장된 로그인 정보 삭제
-            localStorage.removeItem('kakaoAuthToken');
-            // 로그아웃 후 로그인 페이지(또는 원하는 페이지)로 이동
-            window.location.href = "login.html";
-          });
-        });
-      }
+    
 
 
 
