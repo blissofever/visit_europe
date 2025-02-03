@@ -253,7 +253,7 @@ $(document).ready(function() {
 		freetimeMAL: "말라가 자유시간",
 		freetimeRONDA: "론다 자유시간",
 		freetimeNERJA: "네르하 자유시간",
-		gaudiAndFlamenco: "가우디투어 + 플라멩고쇼",
+		gaudiAndFlamenco: "바르셀로나 가우디투어",
 		toledosegoviaTour: "톨레도 + 세고비아 투어",
 		alhanbraTour: "알함브라 투어",
 		sevilleTour: "세비야 투어",
