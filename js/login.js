@@ -93,7 +93,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
+    var logoutBtn = document.getElementById('logoutBtn');
+      if (logoutBtn) {
+        logoutBtn.addEventListener('click', function() {
+          Kakao.Auth.logout(function(response) {
+            console.log("카카오 로그아웃 완료:", response);
+            // 클라이언트에 저장된 로그인 정보 삭제
+            localStorage.removeItem('kakaoAuthToken');
+            // 로그아웃 후 로그인 페이지(또는 원하는 페이지)로 이동
+            window.location.href = "login.html";
+          });
+        });
+      }
 
 
 
