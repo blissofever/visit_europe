@@ -64,7 +64,7 @@ function kakaoLogin() {
             });
           } else if (serverResponse.status === 200) {
             // 정상 사용자인 경우 메인 페이지(index.html)로 이동
-            window.location.href = "lx-index.html";
+            window.location.href = "index-test.html";
           } else {
             alert("서버 오류가 발생했습니다. 다시 시도해주세요.");
           }
