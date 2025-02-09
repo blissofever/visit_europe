@@ -207,7 +207,7 @@ $(document).ready(function() {
 		//체코 일정
 		freetimePRG: "프라하 자유시간",
 		freetimeCESKY: "체스키 자유시간",
-		pragueTour: "프라하 허니문투어 + 중식, 유람선",
+		pragueTour: "프라하 허니문투어 + 중식, 천문시계탑 전망대",
 		ceskyTour: "체스키 차량투어 + 중식",
 		pragueChoice: "프라하 선택일정 (드레스덴 투어/스냅촬영/비어스파)",
 
