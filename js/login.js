@@ -1,6 +1,6 @@
 // auth.js
 
-Kakao.init('71225b6c164992526c7945def3a32ce6');
+Kakao.init('911b46350bc0ca32f6b4b94b7f2ad2b8');
 
 async function sendUserInfoToServer(userInfo) {
   try {
@@ -65,7 +65,7 @@ function kakaoLogout() {
     console.log("로그아웃 완료:", response);
     localStorage.removeItem('kakaoAuthToken');
     localStorage.removeItem('kakaoUser');
-    window.location.href = "login.html";
+    window.location.href = "../login.html";
   });
 }
 document.addEventListener("DOMContentLoaded", function() {
