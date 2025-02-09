@@ -86,9 +86,9 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-window.addEventListener("beforeunload", function(event) {
-  Kakao.Auth.logout(function(response) {
-    localStorage.removeItem('kakaoAuthToken');
-    localStorage.removeItem('kakaoUser');
-  });
-});
+// window.addEventListener("beforeunload", function(event) {
+//   Kakao.Auth.logout(function(response) {
+//     localStorage.removeItem('kakaoAuthToken');
+//     localStorage.removeItem('kakaoUser');
+//   });
+// });
