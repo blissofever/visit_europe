@@ -6,8 +6,18 @@
     <title>항공편 정보 변환기</title>
     <link rel="stylesheet" href="../css/core.css">
     <link rel="stylesheet" href="../css/common-c.css">
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/common-c.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+		var token = localStorage.getItem('kakaoAuthToken');
+		if (!token) {
+			alert("로그인이 필요한 페이지입니다.");
+			window.location.href = "login.html"; // 로그인 페이지 경로로 변경
+		}
+		});
+    </script>
 </head>
 
 <body>

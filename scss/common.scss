@@ -7,6 +7,23 @@
 
 .mCSB_inside>.mCSB_container{margin-right: 0;}
 
+.login{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0 0 0 / .5);
+  button{
+    background: transparent;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+  }
+}
+
 // main
 .main-index{
   height: 100vh;
