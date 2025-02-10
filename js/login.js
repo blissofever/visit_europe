@@ -40,10 +40,10 @@ function kakaoLogin() {
             Kakao.Auth.logout(function() {
               localStorage.removeItem('kakaoAuthToken');
               localStorage.removeItem('kakaoUser');
-              window.location.href = "login.html";
+              window.location.href = "index.html";
             });
           } else if (serverResponse.status === 200) {
-            window.location.href = "index.html";
+            window.location.href = "login.html";
           } else {
             alert("서버 오류가 발생했습니다. 다시 시도해주세요.");
           }
