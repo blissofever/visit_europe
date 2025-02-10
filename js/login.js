@@ -65,7 +65,7 @@ function kakaoLogout() {
     console.log("로그아웃 완료:", response);
     localStorage.removeItem('kakaoAuthToken');
     localStorage.removeItem('kakaoUser');
-    window.location.href = "../login.html";
+    window.location.href = "../index.html";
   });
 }
 document.addEventListener("DOMContentLoaded", function() {
