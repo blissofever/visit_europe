@@ -43,7 +43,7 @@ function kakaoLogin() {
               window.location.href = "login.html";
             });
           } else if (serverResponse.status === 200) {
-            window.location.href = "/html/index-test.html";
+            window.location.href = "index.html";
           } else {
             alert("서버 오류가 발생했습니다. 다시 시도해주세요.");
           }
