@@ -635,6 +635,7 @@ section.section-bg-main .main-title h2 {
   justify-content: center;
   flex-direction: column;
   gap: 6px;
+  z-index: 2;
 }
 .btn-box:not(.table-area .btn-box) .btn {
   width: 56px;
