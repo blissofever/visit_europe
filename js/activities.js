@@ -1,11 +1,11 @@
 
-		document.addEventListener("DOMContentLoaded", function() {
-		var token = localStorage.getItem('kakaoAuthToken');
-		if (!token) {
-			alert("로그인이 필요한 페이지입니다.");
-			window.location.href = "index.html"; // 로그인 페이지 경로로 변경
-		}
-		});
+		// document.addEventListener("DOMContentLoaded", function() {
+		// var token = localStorage.getItem('kakaoAuthToken');
+		// if (!token) {
+		// 	alert("로그인이 필요한 페이지입니다.");
+		// 	window.location.href = "index.html"; // 로그인 페이지 경로로 변경
+		// }
+		// });
 
 $(document).ready(function() {
 	// 주요 일정 내용을 변수로 정의
@@ -263,6 +263,7 @@ $(document).ready(function() {
 		freetimeRONDA: "론다 자유시간",
 		freetimeNERJA: "네르하 자유시간",
 		gaudiAndFlamenco: "바르셀로나 가우디투어",
+		andaluciaTour: "안달루시아 이동투어 (론다&네르하)",
 		toledosegoviaTour: "톨레도 + 세고비아 투어",
 		alhanbraTour: "알함브라 투어",
 		sevilleTour: "세비야 투어",
@@ -276,6 +277,7 @@ $(document).ready(function() {
 		freetimePRM: "포르티망 자유시간",
 		portwineryTour: "포트와인 와이너리 투어",
 		sintraandrocaTour: "신트라+호카곶+카스카이스 투어",
+		lisboacard: "리스본 자유시간 + 리스보아카드 1일권",
 		hotspringPDL: "활화산 천연 온천 스파",
 		prmChoice: "포르티망 선택일정 (베나길카약 투어/ 렌터카 자유시간)",
 
