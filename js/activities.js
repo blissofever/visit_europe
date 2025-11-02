@@ -76,6 +76,8 @@ $(document).ready(function() {
 		MRS : "마르세유",
 		GLB : "그레방",
 		PRM : "포르티망",
+		LGS : "라고스",
+		ALB : "알부페이라",
 		
 	}
 
@@ -139,6 +141,8 @@ $(document).ready(function() {
 		movetoPMI: "마요르카 이동",
 		movetoPDL: "폰타델가다 이동",
 		movetoPRM: "포르티망 이동",
+		movetoLGS: "라고스 이동",
+		movetoALB: "알부페이라 이동",
 		movetoLIS: "리스본 이동",
 		movetoOPO: "포르투 이동",
 		movetoPRG: "프라하 이동",
@@ -275,10 +279,13 @@ $(document).ready(function() {
 		freetimeOPO: "포르투 자유시간",
 		freetimePDL: "폰타델가다 자유시간",
 		freetimePRM: "포르티망 자유시간",
+		freetimeLGS: "라고스 자유시간",
+		freetimeALB: "알부페이라 자유시간",
 		portwineryTour: "포트와인 와이너리 투어",
 		sintraandrocaTour: "신트라+호카곶+카스카이스 투어",
 		lisboacard: "리스본 자유시간 + 리스보아카드 1일권",
 		hotspringPDL: "활화산 천연 온천 스파",
+		lgsboattour: "라고스 자유시간 + 베나길 보트투어",
 		prmChoice: "포르티망 선택일정 (베나길카약 투어/ 렌터카 자유시간)",
 
 		// 스위스 일정

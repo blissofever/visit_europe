@@ -472,6 +472,25 @@
           display: inline-block;
           margin-right:8px;
         }
+        .message{
+          color: #fff;
+          // font-weight: ;
+          font-size: 14px;
+          margin-left: 8px;
+          display: inline-block;
+          padding: 4px 8px;
+          background-color: #138EE9;
+          border-radius: 5px;
+
+          &.gold{
+            background-color: #2ecb24;
+          }
+          &::before{
+            content: '*';
+            margin-right: 4px;
+            color: #fff;
+          }
+        }
       }
       .title-sub{
         font-size: 18px;

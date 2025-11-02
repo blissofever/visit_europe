@@ -428,6 +428,23 @@
   display: inline-block;
   margin-right: 8px;
 }
+.main-list > li a.product-list .message {
+  color: #fff;
+  font-size: 14px;
+  margin-left: 8px;
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #138EE9;
+  border-radius: 5px;
+}
+.main-list > li a.product-list .message.gold {
+  background-color: #2ecb24;
+}
+.main-list > li a.product-list .message::before {
+  content: "*";
+  margin-right: 4px;
+  color: #fff;
+}
 .main-list > li a .title-sub {
   font-size: 18px;
   font-weight: 400;
