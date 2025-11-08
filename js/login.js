@@ -36,7 +36,7 @@ function kakaoLogin() {
             email: res.kakao_account && res.kakao_account.email
           });
           if (serverResponse.status === 403) {
-            alert("해당 계정은 밴 처리되었습니다.");
+            alert("접속할 수 없는 사용자입니다. 메신저 문의 바랍니다.");
             Kakao.Auth.logout(function() {
               localStorage.removeItem('kakaoAuthToken');
               localStorage.removeItem('kakaoUser');
