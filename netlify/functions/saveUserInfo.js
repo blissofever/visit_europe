@@ -13,9 +13,9 @@ const bannedUsers = ["123456789", "987654321",
   "4242974826", //qotpdl20@nate.com
   "4215931465", //chaos132@naver.com
   "4323673373", //chingoo4860@naver.com
-  "3919632115", //jan4081@naver.com
+  // "3919632115", //jan4081@naver.com 전주희
   "3919437960", //7116420@hanmail.net
-  "3929517577", //mansaok79@hanmail.net
+  // "3929517577", //mansaok79@hanmail.net 김진혁
   "4209342117", //sunny-family@nate.com
   "4227462736", //dmzgt@naver.com
   "3919380490", //bb9706@daum.net
