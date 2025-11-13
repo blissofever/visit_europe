@@ -3,14 +3,15 @@
 const bannedUsers = ["123456789", "987654321",
   
   "3930863609", //58827099a@gmail.com
-  "3935150212", //jjb_0705@naver.com 김수현
-  "3938203995", //hw01619@naver.com
-  "3919380490", //bb9706@daum.net 
   "3916838698", //selfh1@naver.com
   "3917592151", //knighta@naver.com
   "4229162689", //skagus7912@naver.com
+  "3935150212", //jjb_0705@naver.com 김수현
   "4230780696", //paradise2151@naver.com 파라다이스
-  "3919437960", //7116420@hanmail.net
+  // "3938203995", //hw01619@naver.com 성혜원
+  // "000", // lovken@nate.com 서계영
+  // "3919380490", //bb9706@daum.net 김주현
+  // "3919437960", //7116420@hanmail.net 성기남
   // "3925395335", //cthinae@naver.com 정인애
   // "3959513059", //da6987@naver.com 정다연
   // "4242974826", //qotpdl20@nate.com 배세이
@@ -26,7 +27,6 @@ const bannedUsers = ["123456789", "987654321",
   // "3922042936", //khseok0825@gmail.com 김현석
   // "3916838698", //custom@honeymoonmate.com 전상욱
   // "3921980434", //heroo229@hanmail.net 정상영
-  // "3916838698", //custom@honeymoonmate.com 전상욱
   // "3900898788", //blissofever@hotmail.com 이태석
 ];
 
