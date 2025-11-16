@@ -27,7 +27,7 @@ const bannedUsers = ["123456789", "987654321",
   // "3922042936", //khseok0825@gmail.com 김현석
   // "3916838698", //custom@honeymoonmate.com 전상욱
   // "3921980434", //heroo229@hanmail.net 정상영
-  // "3900898788", //blissofever@hotmail.com 이태석
+  "3900898788", //blissofever@hotmail.com 이태석
 ];
 
 exports.handler = async function(event, context) {
