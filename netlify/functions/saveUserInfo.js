@@ -3,7 +3,7 @@
 const bannedUsers = ["123456789", "987654321",
   
   "3930863609", //58827099a@gmail.com
-  // "3916838698", //selfh1@naver.com 투어민 직원추정
+  "3916838698", //selfh1@naver.com 투어민 직원추정 그러나 벤
   "3917592151", //knighta@naver.com
   "4229162689", //skagus7912@naver.com
   "3935150212", //jjb_0705@naver.com 김수현
