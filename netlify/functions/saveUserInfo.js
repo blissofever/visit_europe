@@ -1,7 +1,7 @@
 // netlify/functions/saveUserInfo.js
 
 const bannedUsers = ["123456789", "987654321",
-  "4629940909", //tjalsgml7860@naver.com
+  // "4629940909", //tjalsgml7860@naver.com 서민희
 
   "3930863609", //58827099a@gmail.com
   // "3916838698", //selfh1@naver.com 전상욱
