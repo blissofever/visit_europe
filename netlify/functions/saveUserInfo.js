@@ -6,7 +6,7 @@ const bannedUsers = ["123456789", "987654321",
   "3930863609", //58827099a@gmail.com
   // "3916838698", //selfh1@naver.com 전상욱
   "3917592151", //knighta@naver.com
-  "4229162689", //skagus7912@naver.com
+  // "4229162689", //skagus7912@naver.com 김남현
   "3935150212", //jjb_0705@naver.com 김수현
   "4230780696", //paradise2151@naver.com 파라다이스
   // "3938203995", //hw01619@naver.com 성혜원
